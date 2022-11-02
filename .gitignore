@@ -1,0 +1,7 @@
+*.class
+target/
+
+Band/.factorypath
+Band/.classpath
+Band/.factorypath
+Band/target/m2e-wtp/web-resources/META-INF/maven/it.progetto/Band/pom.properties
