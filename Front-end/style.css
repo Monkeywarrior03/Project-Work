@@ -1,0 +1,34 @@
+.rounded-circle {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 5px;
+}
+
+header {
+    background: linear-gradient(blue,cornflowerblue);
+    width: auto;
+    height: 100px;   
+}
+
+.pulsante{
+    background-color: cornflowerblue;
+    float: right;
+    margin-top: 35px;
+    margin-right: 15px;
+    border: 2px;
+    border-color: rgb(255, 255, 255);
+}
+
+.btn-group {
+    margin-left: 10px;
+}
+
+#search {
+    float: left;
+    margin-left: 35px;
+    width: 400px;
+}
+
