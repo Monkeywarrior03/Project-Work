@@ -2,9 +2,10 @@
     background-color: black;
     width: 30px;
     height: 30px;
-    float: right;
-    margin-top: 35px;
-    margin-right: 5px;
+    float: left;
+    margin-top: 67px;
+    margin-left: 18px;
+
 }
 
 a {
@@ -18,13 +19,12 @@ header {
     height: 100px;   
 }
 
-.pulsante{
+#pulsante{
     background-color: cornflowerblue;
-    float: right;
-    margin-top: 35px;
-    margin-right: 15px;
+    float: left;
+    margin-top: 65px;
+    margin-left: 10px;
     border: 2px;
-    border-color: rgb(255, 255, 255);
 }
 
 .btn-group {
@@ -41,3 +41,24 @@ header {
     background-color: antiquewhite;
 }
 
+footer {
+    background: linear-gradient(blue,cornflowerblue);  
+    width: auto;
+    height: 150px;   
+} 
+#assistenza{
+    background-color: cornflowerblue;
+    margin-top: 65px;
+    margin-left: 15px;
+
+}
+
+#assist {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 67px;
+    margin-left: 18px;
+
+}

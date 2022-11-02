@@ -120,15 +120,47 @@
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      <small id="emailHelp" class="form-text text-muted">Attenzione! Non deve contenere lettere con accento e spazi.</small>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
               </div>
-
+           
+            <footer>
+              <div id="footer">
+                  <img src="login.jpg" class="rounded-circle"> 
+                  <button type="button" class="btn btn-primary" id="pulsante">
+                    AdminLogin
+                  </button>
             </div>
 
+            <img src="clienti.webp" class="rounded-circle" id="assist"> 
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="assistenza">
+              Assistenza clienti
+            </button>
 
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Assistenza clienti</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Puoi contattarci da lunedì a domenica dalle ore 8:30 alle ore 21:00, al numero 0291948377. 
+                    I costi della chiamata sono legati all'operatore utilizzato.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button type="button" class="btn btn-primary">Ho capito</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        </footer>
+          </div>
             <!--footer-->
         </div>
     </body>
