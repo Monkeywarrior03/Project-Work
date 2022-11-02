@@ -7,6 +7,11 @@
     margin-right: 5px;
 }
 
+a {
+    text-decoration: none;
+    color: navy;
+}
+
 header {
     background: linear-gradient(blue,cornflowerblue);
     width: auto;
