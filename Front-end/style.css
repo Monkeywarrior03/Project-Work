@@ -144,3 +144,17 @@ border: 2px;
     margin-right: 20px;
     margin-top: 520px;
 }
+
+#paypal{
+    height: 50px;
+    width: 140px;
+    margin-left: 180px;
+    margin-bottom: 45px;
+}
+
+#pp{
+    color: white;
+    float: right;
+    margin-right: 510px;
+    padding-top: 23px;
+}
