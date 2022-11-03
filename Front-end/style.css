@@ -62,3 +62,52 @@ footer {
     margin-left: 18px;
 
 }
+
+.card {
+    width: 800px;
+    margin-bottom: 3px;
+}
+
+#numeri {
+   margin-left: 500px;
+}
+
+#konzert{
+    width: 310px;
+    height: 720px;
+     float: right;
+}
+
+#event{
+    margin-left: 2px;
+}
+
+#konzert3{
+    width: 310px;
+    height: 655px;
+     float: right;
+}
+
+#spedizione{
+    background-color: cornflowerblue;
+    margin-top: 65px;
+    margin-left: 40px;   
+}
+
+#sped{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 67px;
+    margin-left: 18px;
+}
+
+.pulsanti{
+    background-color: cornflowerblue;
+    float: right;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border: 2px;
+}
