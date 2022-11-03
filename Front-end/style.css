@@ -28,7 +28,7 @@ header {
 }
 
 .btn-group {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 #search {
@@ -95,4 +95,37 @@ footer {
     margin-left: 10px;
     margin-right: 20px;
     border: 2px;
+}
+
+#carr{
+background-color: cornflowerblue;
+float: right;
+margin-top: 35px;
+margin-left: 10px;
+margin-right: 15px;
+border: 2px;
+}
+
+#carrello {
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 45px;
+    width: 45px;
+}
+
+#hcarrello {
+   margin-left: 20px;
+}
+
+#spazio{
+    height: 600px;
+}
+
+#acquista{
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 520px;
 }
