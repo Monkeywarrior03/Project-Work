@@ -63,6 +63,21 @@ footer {
 
 }
 
+#assistenzabtn {
+    
+    float: left;
+    margin-top: 67px;
+    margin-left: 18px;
+
+}
+
+#adminbtn {
+
+    float: left;
+    margin-top: 67px;
+    margin-left: 18px;
+}
+
 /*.card {
     width: 800px;
     margin-bottom: 3px;
