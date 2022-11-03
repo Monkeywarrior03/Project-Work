@@ -14,6 +14,7 @@
             <header>
                 <div id="header">
                     <img src="" class="logo">
+
                
                 </div>
             </header>
@@ -150,6 +151,54 @@
                   <div class="modal-body">
                     Puoi contattarci da lunedì a domenica dalle ore 8:30 alle ore 21:00, al numero 0291948377. 
                     I costi della chiamata sono legati all'operatore utilizzato.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="callto:0291948377">Chiama ora</a></button>
+                    <button type="button" class="btn btn-primary">Ho capito</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="spedizione.jpg" class="rounded-circle" id="sped"> 
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="spedizione">
+             Info spedizioni
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="spedi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="Lieferung">Spedizione</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Tipo</th>
+                          <th scope="col">Tempo</th>
+                          <th scope="col">Prezzo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Standard</td>
+                          <td>7 giorni lavorativi</td>
+                          <td>2,50 euro</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Express</td>
+                          <td>2-3 giorni</td>
+                          <td>4,50 euro</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="callto:0291948377">Chiama ora</a></button>
