@@ -169,3 +169,14 @@ border: 2px;
  border: 2px;
  background-color: antiquewhite;
 }
+
+#modifica{
+    height: 25px;
+    width: 80px;
+}
+
+#elimina{
+    height: 25px;
+    width: 80px;
+    padding-top: 2px;
+}

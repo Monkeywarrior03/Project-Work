@@ -25,10 +25,9 @@
                <div class="btn-group">
                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Shop </button>
                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"><strong>Novità</strong></a></li>
-                  <li><a class="dropdown-item" href="#">CD</a></li>
-                  <li><a class="dropdown-item" href="#">LP</a></li> 
-                  <li><a class="dropdown-item" href="#">Vinili</a></li>
+                <li><a class="dropdown-item" href="template_product.html"><strong>Novità</strong></a></li>
+                <li><a class="dropdown-item" href="template_shop.html">CD & LP</a></li>
+                <li><a class="dropdown-item" href="template_product.html">Vinili</a></li>
                </ul></div>
                <div class="btn-group">
                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Eventi</button>
@@ -75,9 +74,8 @@
           <td th:text="${c.postalCode}">000010</td>
           <td th:text="${c.telephone}">78878788787</td>
           <td th:text="${c.email}">cgjkelikeòw@kwkw.it</td>
-          <td  class="text-end"><a th:href="@{/reserved(id=${c.id})}" class="btn btn-primary btn-sm small-button"   th:text="#{btn.edit}"></a>
-           <a th:href="@{/deleteconfirm(id=${c.id}, type='customer')}" class="btn btn-danger btn-sm small-button" th:text="#{btn.delete}"></a></td>
-         </tr>
+         </tr> <td  class="text-end"><a th:href="@{/reserved(id=${c.id})}"  id="modifica" class="btn btn-primary btn-sm small-button"   th:text="#{btn.edit}">Modifica</a>
+           <a th:href="@{/deleteconfirm(id=${c.id}, type='customer')}" id="elimina" class="btn btn-danger btn-sm small-button" th:text="#{btn.delete}">Elimina</a></td>
         </tbody>
        </table>
        <h6>Non ci sono altri consumatori registrati</h6>
@@ -134,14 +132,7 @@
 <td colspan="4" style="text-align: center;"><input type="submit" value="Registra consumatore" class="btn btn-primary btn-sm small-button"></td>
 </tr>
 </form>
-</div></div>
-       
-        
-          
-       
-
-        
-        <!--footer-->
+</div></div>       
     </div>
     </body>
     </html>
