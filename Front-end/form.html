@@ -11,15 +11,16 @@
             </head>
     <body>
         <div class="container">
-            <header>
-                <div id="header">
-                    <img src="" class="logo">
-               
-                </div>
-            </header>
+          <header>
+            <div id="header">
+               <a href="carrello.html"> <img src="carrello.jpg"  class="rounded-circle" id="carrello"></a>
+            </div>
+        </header>
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">Benvenuti sul nostro sito!</a>
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                    <div class="btn-group">
+                      <a button type="button" class="btn btn-secondary" href="pagina_iniziale.html"> Home </a>
                <div class="btn-group">
                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Shop </button>
                <ul class="dropdown-menu">
@@ -31,9 +32,9 @@
                <div class="btn-group">
                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Eventi</button>
               <ul class="dropdown-menu">   
-                <li><a class="dropdown-item" href="#"><strong>Vedi tutto</strong></a></li>
-                 <li><a class="dropdown-item" href="#">Le date passate</a></li>
-                 <li><a class="dropdown-item" href="#">Le prossime date</a></li>
+                <li><a class="dropdown-item" href="eventi.html"><strong>Vedi tutto</strong></a></li>
+                 <li><a class="dropdown-item" href="eventi.html">Le date passate</a></li>
+                 <li><a class="dropdown-item" href="eventi1.html">Le prossime date</a></li>
               </ul> </div> 
                   <form class="d-flex" id="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -110,42 +111,54 @@
                     <!--DETTAGLI PRODOTTO-->
         
     <!---footer uguale alla homepage-->       
-            <footer>
-              <div id="footer">
-                  <img src="login.jpg" class="rounded-circle"> 
-                  <button type="button" class="btn btn-primary" id="pulsante">
-                    AdminLogin
-                  </button>
-            </div>
+    <footer>
+      <div id="footer">
+          <img src="login.jpg" class="rounded-circle">
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adminbtn">
+Admin Area
+</button>
 
-            <img src="clienti.webp" class="rounded-circle" id="assist"> 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="assistenza">
-              Assistenza clienti
-            </button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Inserisci i tuoi dati per accedere all'area riservata</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<form action="login" method="POST">
+  <p>Inserisci username</p><input type="text" id="username" name="username" required="required"><br>
+  <p>Inserisci password</p><input type="password" id="password" name="password" required="required"> <br><br>
+  <input type="submit" value="Accedi">
+ </form>
+</div>
+</div>
+</div>
+</div>
+    
+    <p><img src="clienti.webp" class="rounded-circle" id="assist"> 
 
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Assistenza clienti</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Puoi contattarci da lunedì a domenica dalle ore 8:30 alle ore 21:00, al numero 0291948377. 
-                    I costi della chiamata sono legati all'operatore utilizzato.
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="callto:0291948377">Chiama ora</a></button>
-                    <button type="button" class="btn btn-primary">Ho capito</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-                        </footer>
-          </div>
-            <!--footer-->
-        </div>
+      <a class="btn btn-primary" id="assistenzabtn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+       Assistenza clienti
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample" style="max-width: 700px; padding: 5px;">
+      <div class="card card-body">
+        Puoi contattarci da lunedì a domenica dalle ore 8:30 alle ore 21:00, al numero 0291948377. <br>
+        I costi della chiamata sono legati all'operatore utilizzato.
+      </div>
+    </div>
+    </div>
+    <div id="pp">
+    <h6 >La nostra azienda partner<br> per i pagamenti:</h6></div>
+     <a href="https://www.paypal.com/it/home"> <img src="paypal.png" id="paypal"></a>
+                </footer>
+  </div>
+    <!--footer-->
+</div>
+
+
     </body>
 </html>

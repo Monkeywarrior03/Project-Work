@@ -11,15 +11,16 @@
             </head>
     <body>
         <div class="container">
-            <header>
-                <div id="header">
-                    <img src="" class="logo">
-               
-                </div>
-            </header>
+          <header>
+            <div id="header">
+               <a href="carrello.html"> <img src="carrello.jpg"  class="rounded-circle" id="carrello"></a>
+            </div>
+        </header>
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">Benvenuti sul nostro sito!</a>
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                    <div class="btn-group">
+                      <a button type="button" class="btn btn-secondary" href="pagina_iniziale.html"> Home </a>
                <div class="btn-group">
                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Shop </button>
                <ul class="dropdown-menu">
@@ -31,9 +32,9 @@
                <div class="btn-group">
                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Eventi</button>
               <ul class="dropdown-menu">   
-                <li><a class="dropdown-item" href="#"><strong>Vedi tutto</strong></a></li>
-                 <li><a class="dropdown-item" href="#">Le date passate</a></li>
-                 <li><a class="dropdown-item" href="#">Le prossime date</a></li>
+                <li><a class="dropdown-item" href="eventi.html"><strong>Vedi tutto</strong></a></li>
+                 <li><a class="dropdown-item" href="eventi.html">Le date passate</a></li>
+                 <li><a class="dropdown-item" href="eventi1.html">Le prossime date</a></li>
               </ul> </div> 
                   <form class="d-flex" id="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -130,14 +131,13 @@
                 </div>
               </div>
     <!---footer uguale alla homepage-->       
-            <footer>
-              <div id="footer">
-                  <img src="login.jpg" class="rounded-circle"> 
-                  <button type="button" class="btn btn-primary" id="pulsante">
-                    AdminLogin
-                  </button>
-            </div>
-    <!--FOOTER-->
+    <footer>
+      <div id="footer">
+          <img src="login.jpg" class="rounded-circle">
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adminbtn">
+Admin Area
+</button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -170,11 +170,13 @@
         I costi della chiamata sono legati all'operatore utilizzato.
       </div>
     </div>
-    
     </div>
+    <div id="pp">
+    <h6 >La nostra azienda partner<br> per i pagamenti:</h6></div>
+     <a href="https://www.paypal.com/it/home"> <img src="paypal.png" id="paypal"></a>
                 </footer>
   </div>
     <!--footer-->
-        </div>
+</div>
     </body>
 </html>
