@@ -158,3 +158,15 @@ border: 2px;
     margin-right: 510px;
     padding-top: 23px;
 }
+
+#table1{
+ border-color: black;
+ border: 2px;
+ ;
+}
+
+#form1{
+ border-color: black;
+ border: 2px;
+ background-color: antiquewhite;
+}
