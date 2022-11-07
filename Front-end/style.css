@@ -34,7 +34,7 @@ header {
 #search {
     float: left;
     margin-left: 35px;
-    width: 400px;
+    width: 540px;
 }
 
 .navbar {
@@ -179,4 +179,18 @@ border: 2px;
     height: 25px;
     width: 80px;
     padding-top: 2px;
+}
+
+.card {
+    background-color: rgb(120, 120, 231);
+}
+
+#konz{
+    width: 275px;
+    height: 930px;
+    float: right;
+}
+
+#barra{
+    background-color: rgb(120, 120, 231);
 }

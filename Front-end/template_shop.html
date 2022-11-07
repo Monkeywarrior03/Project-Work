@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="it" class="h-100">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,14 @@
                 <link rel="stylesheet" href="style.css">
             </head>
     <body>
+      <ul>
+        <li th:each="product : ${products}" th:object="${product}" th:if="${product.type == 1}">
+   <span th:text="${product.name}"></span>
+   <a th:href="'shopDisks/addCart?id=' + ${product.id}" th:text="#{btn.addcart}"></a>
+  </li>
+
+
+      </ul>
         <div class="container">
           <header>
             <div id="header">
@@ -41,29 +49,8 @@
                   </form>
             </nav>  
 
-            <div class="row">
-                <div class="col-3 bg-light text-center">
-  <!---barra per filtrare il catalogo (da far funzionare con js)-->      
-            <div class="list-group">
-                    <li class="list-group-item">Filtra catalogo</li>
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" checked>
-                  Nuove uscite
-                </label>
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" checked>
-                  Remastered
-                </label>
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" checked>
-                  Offerte speciali
-                </label>
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" checked>
-                  Best Seller
-                </label>
-              </div>
-                </div>
+            <img src="" alt="">
+
             
                 <div class="col-9 bg-light text-center">
 <!---SLIDE CON ARTICOLI IN PRIMO PIANO E OFFERTE (Impostare lable in modo da rendere più semplice il controllo)-->
@@ -95,7 +82,7 @@
                               <p>Contiene 4 tracce inedite eseguite live nella festa di piazza di Rossano Calabro</p>
                             </div>
                           </div>
-                        </div>
+                      
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
@@ -116,7 +103,8 @@
                               <p class="card-text">Il cd di Panda. 
                                 Contiene i 3 brani iniziali del cd.
                               </p>
-                              <a href="#" class="btn btn-primary">Vedi</a>
+                              <p class="card-text"><small class="text-muted">Prezzo: 19,99</small></p>
+                              <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
                             </div>
                           </div>
                         </div>
@@ -125,10 +113,9 @@
                             <img src="img/article2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title"><a href="template_product.html">Panda "Deluxe Edition"</a></h5>
-                              <p class="card-text">La versione deluxe dell'ultimo successo degli Orsetti Lavativi.
-                                Contiene 4 brani inediti eseguiti live durante il grande concerto di Rossano Calabro.</p>
+                              <p class="card-text">La versione deluxe dell'ultimo successo degli Orsetti Lavativi.</p>
                                 <p class="card-text"><small class="text-muted">Prezzo: 19,99</small></p>
-                              <a href="#" class="btn btn-primary">Vedi</a>
+                              <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
                             </div>
                           </div>
                         </div>
@@ -139,7 +126,7 @@
                               <h5 class="card-title"><a href="Honey.html">Honey, cd autografato</a></h5>
                               <p class="card-text">Il CD autografato dagli Orsetti Lavativi.</p>
                               <p class="card-text"><small class="text-muted">Prezzo: 19,99</small></p>
-                              <a href="Honey.html" class="btn btn-primary">Vedi</a>
+                              <a href="Honey.html" class="btn btn-primary">Aggiungi al carrello</a>
                             </div>
                           </div>
                         </div>
